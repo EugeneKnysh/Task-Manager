@@ -79,7 +79,6 @@ function addTask(date, time, text) {
         time: time,
         text: text
     }
-    console.log(taskDTO);
 
     $.ajax({
         method: "POST",
