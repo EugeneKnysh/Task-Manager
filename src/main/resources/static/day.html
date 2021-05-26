@@ -11,28 +11,13 @@
 <body>
 <div class="container">
     <div class="line">
-        <p class="date">May 11, 2021</p>
+        <p class="date"></p>
     </div>
     <div class="tasks">
-        <div class="task">
-            <div class="time">11:30</div>
-            <div class="text-task">Task for this day.</div>
-            <button type="button" class="btn btn-outline-danger delete-button">X</button>
-        </div>
-        <div class="task">
-            <div class="time">13:00</div>
-            <div class="text-task">Task for this day.</div>
-            <button type="button" class="btn btn-outline-danger delete-button">X</button>
-        </div>
-        <div class="task">
-            <div class="time">17:30</div>
-            <div class="text-task">Task for this day.</div>
-            <button type="button" class="btn btn-outline-danger delete-button">X</button>
-        </div>
+        <!--CONTENT-->
     </div>
     <div class="add-task">
-        <select class="form-select" aria-label="Time select">
-            <option selected>Select time for task</option>
+        <select class="form-select time-select" aria-label="Time select">
             <option value="00:00">00:00</option>
             <option value="00:30">00:30</option>
             <option value="01:00">01:00</option>
@@ -83,10 +68,11 @@
             <option value="23:30">23:30</option>
         </select>
 
-        <div class="mb-3">
-            <label for="text" class="form-label">Task text.</label>
-            <input type="email" class="form-control" id="text">
+        <div class="input-text-task">
+            <input type="email" class="form-control" id="text" placeholder="Task text" required>
         </div>
+
+        <button type="button" class="btn btn-primary add-button">Add task</button>
     </div>
 </div>
 </body>

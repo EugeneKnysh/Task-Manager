@@ -23,6 +23,11 @@ body {
     font-size: 3rem;
 }
 
+.date a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .calendar {
     font-size: 1.5rem;
     text-align: center;
@@ -142,6 +147,7 @@ td:active {
 
 .time {
     margin: 0 1rem;
+    width: 4rem;
 }
 
 .text-task {
@@ -157,5 +163,18 @@ td:active {
     flex-direction: row;
     justify-content: start;
 
-    margin: 0.5rem 0;
+    margin: 3rem 0;
+}
+
+.time-select {
+    margin: 0 0.3rem;
+    width: 6rem;
+}
+
+.input-text-task {
+    margin: 0 0.3rem;
+}
+
+.add-button {
+    margin: 0 0.3rem;
 }
