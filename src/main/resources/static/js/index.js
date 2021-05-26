@@ -40,14 +40,6 @@ function renderPage(date) {
 }
 
 function createCalendar(date) {
-    // createFirstWeekWithPrevMonth(date)
-    //     .then(function () {
-    //         return weeksOfCurrentMonth(date, month);
-    //     })
-    //     .then(function (week) {
-    //         createOtherWeeks(date, week);
-    //     });
-
     createFirstWeekWithPrevMonth(date)
         .then(function () {
             createOtherWeeks(date);
@@ -86,37 +78,9 @@ function createFirstWeekWithPrevMonth(date) {
     return d.promise();
 }
 
-// function weeksOfCurrentMonth(date, month) {
-//     let d = $.Deferred();
-//     let week;
-//
-//     while (date.getMonth() === month) {
-//         if (getDay(date) === 0) {
-//             week = $("<tr></tr>");
-//         }
-//
-//         addDayInWeek(date, week);
-//
-//         if (getDay(date) === 6) {
-//             addWeekInCalendar(week);
-//         }
-//
-//         date.setDate(date.getDate() + 1);
-//     }
-//     d.resolve(week);
-//     return d.promise();
-// }
-
 function createOtherWeeks(date) {
     let d = $.Deferred();
     let week;
-    // if (getDay(date) !== 0) {
-    //     for (let i = getDay(date); i < 7; i++) {
-    //         addDayInWeek(date, week);
-    //         date.setDate(date.getDate() + 1);
-    //     }
-    //     addWeekInCalendar(week);
-    // }
 
     while (countWeeks < 6) {
         week = $("<tr></tr>");
